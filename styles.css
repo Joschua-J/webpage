@@ -52,7 +52,7 @@ section {
     color: #fff;
     padding: 20px;
     border-radius: 30px;
-    width: 500px;
+    width: 30%;
     text-align: center;
 }
 
@@ -61,14 +61,14 @@ section.portfolio {
     color: #fff;
     padding: 20px;
     border-radius: 30px;
-    width: 800px;
+    width: 40%;
     text-align: center;
 }
 
 
 .profile-picture {
-    width: 200px;
-    height: 200px;
+    width: 35%;
+    height: 35%;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
