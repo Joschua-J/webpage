@@ -25,6 +25,7 @@ body {
 }
 
 header {
+    position: relative;
     background-color: #000000;
     color: #fff;
     padding: 0px;
@@ -34,9 +35,10 @@ header {
 
 .logo {
     position: absolute;
-    top: 10px;
+    top: 50%;
     left: 10px;
-    width: 70px;
+    transform: translateY(-50%);
+    height: calc(100% - 20px);
 }
 
 main {
@@ -65,6 +67,9 @@ section.portfolio {
     text-align: center;
 }
 
+section.kontakt {
+    width: 15%;
+}
 
 .profile-picture {
     width: 35%;
@@ -88,14 +93,18 @@ footer {
     text-align: center;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
+@media screen and (max-width: 768px) {
+    section, section.portfolio, section.kontakt {
+        width: 90%;
+    }
 }
 
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
+h1 {
+    font-size: 24px;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #888;
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 18px;
+    }
 }
